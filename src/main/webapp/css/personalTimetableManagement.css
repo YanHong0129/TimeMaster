@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Timetable Section */
+.customize-timetable {
+    width: 90%;
+    height:100%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-bar {
+    padding: 10px 20px;
+    width: 100%; 
+    z-index: 3; 
+    margin-bottom: 0;
+}
+
+.header-bar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+
+.header-bar .return a {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.header-bar .clear-btn {
+    background-color: #5E35B1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 90%;
+    margin-bottom: 0px;
+}
+
+.header-bar .clear-btn:hover,
+.customize-timetable .add-btn:hover{
+	background-color: #DCCCFF;
+}
+
+.customize-timetable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position:absolute;
+    z-index:0;
+}
+
+.customize-timetable th {
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.customize-timetable th {
+    background-color:#FAFAFB;
+    font-weight: bold;
+    color: #333333;
+}
+
+.customize-timetable td {
+	padding: 16px 4px 16px 4px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display:flex;
+}
+
+	.customize-timetable .form-container {
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    position:absolute;
+	    display: flex;
+		position:absolute;
+		flex-direction: row;
+	    gap: 2px;
+	}
+	
+	.customize-timetable form {
+		background-color:white;
+		padding:20px 50px ;
+		border:2px solid #8e6dd3;
+		text-align:center;
+		width: 700px;	
+		z-index:1001;
+		display: inline-block;
+	    margin-right: 10px;
+	}
+
+
+.form-container.active, .overlay.active {
+    display: flex; /* show overlay and form*/
+    justify-content: center;
+    align-items: center;
+}
+
+.customize-timetable h3 {
+	font-size:20px;
+	color:#8664c6;
+	margin:24px auto 32px auto;
+}
+
+.customize-timetable label {
+	display:block;
+	margin-bottom:8px;
+	float:left;
+}
+
+.customize-timetable form input[type="text"]{
+	border:1px solid #8e8e8e;
+	padding:5px;
+	margin:2px auto 30px auto;
+	width:100%;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Add spacing between the checkbox and the next input */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 8px; 
+    width: 20px;
+    height: 20px; 
+    cursor: pointer;
+}
+
+.checkbox-container label {
+	height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #575757; 
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.checkbox-container label:hover {
+    color: #5E35B1; 
+}
+
+.checkbox-container label:active {
+    color: #ff0000; 
+}
+
+.checkbox-container input[type="checkbox"]:checked + label {
+    color: #815bce; /* Text color when the checkbox is checked */
+    font-weight: bold; /* Optional: Make it bolder for checked state */
+}
+
+.customize-timetable form input[type="submit"]{
+	color:white;
+	background-color:#815bce;
+	border:none;
+	border-radius:4px;
+	margin-top:36px;
+	padding:12px;
+	cursor:pointer;
+}
+
+.customize-timetable .delete-btn {
+	color:white;
+	background-color:#ff0000;
+	border:none;
+	border-radius:4px;
+	margin-top:36px;	
+	padding:12px;
+	cursor:pointer;
+}
+
+
+.customize-timetable form i {
+	float:left;
+	font-size:20px;
+	color:#5E35B1;
+	cursor:pointer;
+}
+
+.customize-timetable .edit-btn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+    color: #5E35B1;
+    font-family: Garamond, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: inline-flex;
+    gap: 10px; 
+    justify-content: center;
+}
+
+/* Optional styling for the delete button */
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+
+.customize-timetable .view-btn:hover {
+    background-color: #5E35B1;
+    color: #fff;
+}

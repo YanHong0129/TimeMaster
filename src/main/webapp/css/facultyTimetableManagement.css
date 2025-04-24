@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+        /* Section Titles */
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Manage Timetable Section */
+		.manage-timetable {
+		    width: 90%; /* 90% of the screen width */
+		    margin: 0 auto; /* Centers the section horizontally */
+		    margin-left: 5%; /* 5% padding on the left */
+		    margin-right: 5%; /* 5% padding on the right */
+		    margin-bottom: 50px;
+		    align-items: center;
+		}
+
+        .manage-timetable table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .manage-timetable th, .manage-timetable td {
+            padding: 10px;
+            border: 1px solid #D1C4E9;
+            text-align: center;
+        }
+
+        .manage-timetable th {
+            background-color: #EDE7F6;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .manage-timetable .view-btn {
+            background-color: #EDE7F6;
+            border: 1px solid #D1C4E9;
+            padding: 5px 10px;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .manage-timetable .publish-btn {
+            background-color: #5E35B1;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            margin-bottom: 10px;
+        }
+
+        /* View Timetable Section */
+        .view-timetable {
+            background-color: #E3F2FD;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .view-timetable .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .view-timetable .card {
+            width: 400px;
+            height:200px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .view-timetable .card i {
+            font-size: 60px;
+            margin-top: 10px;
+
+        }
+
+        .view-timetable .card h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .view-timetable .card .view-year-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #7300ff;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .view-timetable .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .manage-timetable table {
+                font-size: 14px;
+            }
+        }

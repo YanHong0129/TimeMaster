@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5eaf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1 {
+	font-weight: normal;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+h2{
+    color: #7b51e3;
+    text-decoration: underline;
+}
+a {
+    text-decoration: underline;
+    color: #7b51e3;
+    font-weight: bold;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    height:80%;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+}
+
+.brand-name {
+    color: #7b51e3;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding-right: 40px; /* Leave space for the button */
+    box-sizing: border-box;
+}
+
+.input-group {
+    position: relative; /* Set the parent as a positioned element */
+    margin-bottom: 15px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px; /* Aligns button to the end of the input field */
+    top: 50%; /* Vertically center the button */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+     z-index: 10;
+}
+
+.options p{
+    text-align: right;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b51e3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #6549c4;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    position: relative;
+    background-image: url("/TimeMasterProject/images/loginImage.png");
+    background-position-x: center;
+    background-position-y: center;
+    /*background-color: black;*/
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #d1af5a;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.brand-overlay {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+    .right-section {
+        height: 300px;
+    }
+}

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body, .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content */
+.content {
+    flex: 1; /* Ensure the content takes up remaining space */
+    padding: 20px;
+    min-height: calc(100vh - 60px - 20px); /* Calculate available height, excluding header and footer */
+}
+
+ h2 {
+     font-size: 32px;
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ 
+/* Form Styles */
+form label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.save-btn {
+    background-color: #8455e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto;
+    width: 100%
+}
+
+.schedule-form-test{
+	border: 1px solid black;
+	border-radius: 16px;
+	padding: 20px;
+	width: 80%;
+	margin: 20px auto;
+}
+
+.schedule-form-test select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.schedule-form-test label{
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.icons {
+	margin-left: 10%;
+}

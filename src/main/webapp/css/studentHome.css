@@ -1,0 +1,90 @@
+@charset "UTF-8";
+        /* Welcome Section */
+        .welcome-section {
+            text-align: center;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .welcome-section h1 {
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 700;
+            font-size: 42px;
+            color: #171A1F;
+        }
+
+        .welcome-section h1 span {
+            color: #8A5BE8; /* Color for TimeMaster */
+            font-style: italic;
+        }
+
+        .welcome-section p {
+            font-weight: 400;
+            font-size: 18px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .welcome-section img{
+            width: 50;
+            max-width: 800px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+		.timetable-section {
+		    width: 100%;
+		    height: 500px;
+		    padding: 80px 50px;
+	        background-image: url("/TimeMasterProject/images/studentBackground.jpg");
+	     	background-position-x: center;
+	        background-position-y: center;
+	        background-repeat: no-repeat;
+	        background-size: 100% 100%;
+		    margin-top: 40px;
+		}
+
+        .timetable-section h2 {
+            font-weight: 700;
+            font-size: 32px;
+            color: #ffffff;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        
+       .timetable-section .button {
+		    background-color: #8353E2;
+		    border: none;
+		    border-radius: 6px;
+		    color: white;
+		    padding: 12px 20px;
+		    font-size: 16px;
+		    font-weight: bold;
+		    text-decoration: none;
+		    transition: background-color 0.3s ease;
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		    width: fit-content;
+        }
+
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+
+            .welcome-section h1 {
+                font-size: 32px;
+            }
+
+            .welcome-section p {
+                font-size: 16px;
+            }
+
+            .resource-section h2 {
+                font-size: 24px;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+}

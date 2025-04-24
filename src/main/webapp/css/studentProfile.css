@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #e8ecfc;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+.return{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.profile-content{
+	padding: 20px 90px;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.details-header {
+    display: flex; /* Align items in a row */
+    justify-content: flex-start; /* Keep content aligned to the left */
+    align-items: center; /* Vertically center align */
+    margin-bottom: 10px;
+}
+
+.details-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+    margin-right: 10px; /* Spacing between heading and button */
+}
+
+.edit-profile-btn {
+    margin-left: auto; /* Push the button to the right */
+    padding: 8px 15px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: left;
+}
+
+
+.edit-profile-btn:hover {
+    background-color: #574fd8;
+}
+
+
+/* Style for the Change Password button */
+.change-password-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.change-password-btn:hover {
+    background-color: #574fd8;
+}
+
+
+.profile-details h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.profile-details p{
+    text-align: left;	
+}
+
+.profile-details p span {
+    color: #444;
+    font-weight: bold;
+}
+
+/* General modal styling */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Position fixed to viewport */
+    z-index: 1000; /* On top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Allow scrolling for content if necessary */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Modal content styling */
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: auto; /* Center horizontally */
+    top: 20%; /* Push down vertically */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%; /* Responsive size */
+    max-width: 500px; /* Limit maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2{
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Form styling */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between inputs */
+}
+
+.modal-content label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.modal-content input:focus {
+    border-color: #6c63ff; /* Highlight border when focused */
+}
+
+/* Save button styling */
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #574fd8;
+}
+
+/* Animation for modal appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body, .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content */
+.content {
+    flex: 1; /* Ensure the content takes up remaining space */
+    padding: 20px;
+    min-height: calc(100vh - 60px - 20px); /* Calculate available height, excluding header and footer */
+}
+
+ h2 {
+     font-size: 32px;
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ p{
+ 	text-align: center;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+ table th, table td {
+     border: 1px solid #ddd;
+     padding: 10px;
+     text-align: left;
+     
+ }
+ table th {
+      background-color: #EDE7F6;
+      color: #333;
+      font-weight: bold;
+ }
+      
+.action-icons{
+    display: flex;
+    gap: 10px;
+}
+
+.action-icons button{
+    border: none;
+    background: none;
+}
+    
+.action-icons i{
+    font-size: 24px; /* Set icon size */
+        
+    }
+
+.action-icons i:hover {
+    color: #8455e2; /* Change icon color on hover */
+}
+
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;    
+    border: 1px solid #8455e2;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.modal-content h3{
+	color: #8455e2;
+    margin-bottom: 20px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    text-align: right; /* Align text to the right */
+}
+
+.pagination a {
+    padding: 10px 20px;
+    margin: 5px;
+    color: #2357e7;
+    text-decoration: none;
+    border: 1px solid #2357e7;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #2357e7;
+    color: #fff;
+}
+
